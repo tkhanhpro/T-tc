@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  puppeteer:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      # - USER_DATA_DIR=/data/chrome-profile   # mount if you want to use profile
+      # - CHROME_PATH=/usr/bin/chromium
+    volumes:
+      - ./data:/data
