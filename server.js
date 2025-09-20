@@ -28,7 +28,7 @@ app.use(express.json({ limit: '10mb' }));
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 const USER_DATA_DIR = process.env.USER_DATA_DIR || null;
 const CHROME_PATH = process.env.CHROME_PATH || undefined;
-const GOOGLE_EMAIL = process.env.GOOGLE_EMAIL || 'nakano.miku.5@gmail.com;
+const GOOGLE_EMAIL = process.env.GOOGLE_EMAIL || 'nakano.miku.5@gmail.com';
 const GOOGLE_PASS = process.env.GOOGLE_PASS || 'mikuchan2025@';
 const SHOW_BROWSER = !!process.env.SHOW_BROWSER;
 
